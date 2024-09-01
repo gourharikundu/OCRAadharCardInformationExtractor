@@ -1,4 +1,4 @@
-
+#Aadhar OCR API
 
 <h3>Things I code with</h3>
 <p>
@@ -18,7 +18,8 @@
 
 
 # OCRAadharCardInformationExtractor
-A web application where you can extract your important Aadhar information like Name, Father's name, Date of Birth, Gender and Aadhar number by uploading your aadhar image
+
+A powerful Node.js backend API designed to extract essential information from Aadhar card images, including Name, Father's Name, Date of Birth, and Aadhar Number. Built with Express for robust routing, Multer for efficient image handling, and Tesseract for accurate OCR processing. This API is fast, reliable, and easily integrable into various projects requiring Aadhar data extraction.
 
 # Installation
 
