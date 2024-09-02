@@ -1,4 +1,4 @@
-# Aadhar OCR API
+
 
 <h3>Things I code with</h3>
 <p>
@@ -18,18 +18,79 @@
 
 
 # OCRAadharCardInformationExtractor
-
 A powerful Node.js backend API designed to extract essential information from Aadhar card images, including Name, Father's Name, Date of Birth, and Aadhar Number. Built with Express for robust routing, Multer for efficient image handling, and Tesseract for accurate OCR processing. This API is fast, reliable, and easily integrable into various projects requiring Aadhar data extraction.
+
+<h3> Key Features:</h3>
+
+- Extracts Name, Father's Name, Date of Birth, and Aadhar Number from Aadhar card images
+- Utilizes Tesseract.js for accurate OCR processing
+- Efficient image handling with Multer
+- Robust routing with Express.js
+- Fast and reliable API responses
+
+
+<h3> Tech Stack:</h3>
+
+- Node.js
+- Express.js
+- Multer
+- Tesseract.js
+- OCR processing
+
+
+<h3> API Endpoints:</h3>
+
+- /upload: Extracts Aadhar data from uploaded image
+
+
+<h3> Benefits:</h3>
+
+- Fast and accurate Aadhar data extraction
+- Easy integration with various projects (web, mobile, desktop)
+- Reliable and scalable API architecture
+- Secure image handling and data processing
+
+
+
+<h3> Example Request:</h3>
+
+      bash
+      curl -X POST \
+      http://localhost:3000/upload \
+      -H 'Content-Type: application/x-www-form-urlencoded' \
+      -F 'image=@/path/to/aadhar/image.jpg'
+
+
+
+<h3> Response:</h3>
+
+{
+  "name": "John Doe",
+  "fatherName": "Jane Doe",
+  "dob": "1990-01-01",
+  "gender" : "male",
+  "aadharNumber": "1234 5678 9012"
+}
+
+
+
+<h3> Future Development:</h3>
+
+- Improve OCR accuracy for varied image quality
+- Add support for additional document types (e.g., PAN, Passport)
+- Enhance security measures for sensitive data handling
+
+
 
 # Installation
 
 
-1. Download project from github(https://github.com/fuleswari220/iNotes)  
+1. Download project from github(https://github.com/fuleswari220/OCRAadharCardInformationExtractor)  
     OR follow gitbash commands
     
     i>cd C:\\xampp\htdocs\
     
-    ii>git clone https://github.com/fuleswari220/iNotes
+    ii>git clone https://github.com/fuleswari220/OCRAadharCardInformationExtractor
     
 2. extract files in any directory you want
 
